@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" role="img" aria-label="Schematic side view of a p-11B Levitated Dipole spacecraft plant showing crew habitat, thin tungsten X-ray shadow shield, levitated ring, propellant injector, and magnetic nozzle.">
+  <title>p-11B Levitated Dipole spacecraft plant - schematic layout (side view)</title>
+  <desc>Conceptual cutaway: crew habitat with compact p/11B fuel and H2O propellant tanks; thin tungsten X-ray shadow; vacuum vessel with levitated superconducting ring and peaked p-11B plasma; H2O injector at the divertor throat; aft magnetic nozzle / DEC path.</desc>
+
+  <defs>
+    <linearGradient id="plasmaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c45c26" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#e07a3a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#c45c26" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="exhaustGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="440" fill="#f8fafc"/>
+
+  <text x="24" y="28" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a">p-11B Levitated Dipole spacecraft plant -- schematic layout (side view)</text>
+  <text x="24" y="48" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Conceptual cutaway (not to scale). Thrust axis --&gt;</text>
+
+  <line x1="40" y1="230" x2="920" y2="230" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Crew habitat -->
+  <rect x="48" y="170" width="110" height="120" rx="8" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+  <rect x="58" y="185" width="90" height="50" rx="4" fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+  <text x="103" y="215" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Crew</text>
+  <text x="103" y="230" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">habitat</text>
+  <text x="103" y="270" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#475569">in shadow cone</text>
+
+  <!-- Fuel / propellant tanks -->
+  <rect x="175" y="188" width="28" height="36" rx="3" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="189" y="210" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1e3a8a">p</text>
+  <rect x="175" y="232" width="28" height="36" rx="3" fill="#ffedd5" stroke="#c2410c" stroke-width="1.2"/>
+  <text x="189" y="254" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#9a3412">11B</text>
+  <rect x="210" y="200" width="22" height="60" rx="3" fill="#cffafe" stroke="#0e7490" stroke-width="1.2"/>
+  <text x="221" y="228" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="700" fill="#155e75">H2O</text>
+  <text x="221" y="240" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6" fill="#64748b">prop.</text>
+
+  <!-- Thin tungsten X-ray shadow -->
+  <polygon points="250,195 295,215 295,245 250,265" fill="#57534e" stroke="#1c1917" stroke-width="1.5"/>
+  <text x="272" y="235" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#fafaf9">W</text>
+  <line x1="272" y1="195" x2="272" y2="125" stroke="#64748b" stroke-width="1"/>
+  <text x="272" y="118" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#334155">Thin W X-ray shadow</text>
+
+  <!-- Vacuum vessel -->
+  <ellipse cx="430" cy="230" rx="145" ry="105" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="430" y="112" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#475569">Vacuum vessel (low activation)</text>
+
+  <path d="M320,150 Q380,170 470,175 Q560,180 620,155" fill="none" stroke="#0284c7" stroke-width="1.2" opacity="0.7"/>
+  <path d="M320,310 Q380,290 470,285 Q560,280 620,305" fill="none" stroke="#0284c7" stroke-width="1.2" opacity="0.7"/>
+  <path d="M340,165 Q400,185 480,188 Q560,190 640,170" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.45"/>
+  <path d="M340,295 Q400,275 480,272 Q560,270 640,290" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.45"/>
+  <text x="555" y="135" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#0369a1">open field lines</text>
+  <text x="555" y="147" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#0e7490">ash-first divertor path</text>
+
+  <!-- Optional CHARM-like barrier -->
+  <line x1="520" y1="168" x2="520" y2="188" stroke="#7c3aed" stroke-width="2" opacity="0.55"/>
+  <line x1="520" y1="272" x2="520" y2="292" stroke="#7c3aed" stroke-width="2" opacity="0.55"/>
+  <text x="535" y="178" font-family="Helvetica, Arial, sans-serif" font-size="7" fill="#6d28d9">optional</text>
+  <text x="535" y="188" font-family="Helvetica, Arial, sans-serif" font-size="7" fill="#6d28d9">ash barrier</text>
+
+  <ellipse cx="430" cy="230" rx="78" ry="58" fill="url(#plasmaGrad)" stroke="#c2410c" stroke-width="1.5" opacity="0.9"/>
+  <ellipse cx="430" cy="230" rx="42" ry="28" fill="#fff7ed" stroke="#ea580c" stroke-width="1" opacity="0.5"/>
+
+  <circle cx="390" cy="230" r="14" fill="#1e3a5f" stroke="#0f172a" stroke-width="1.5"/>
+  <circle cx="470" cy="230" r="14" fill="#1e3a5f" stroke="#0f172a" stroke-width="1.5"/>
+  <path d="M390,216 A40,40 0 0 1 470,216" fill="none" stroke="#1e3a5f" stroke-width="3" opacity="0.35"/>
+  <path d="M390,244 A40,40 0 0 0 470,244" fill="none" stroke="#1e3a5f" stroke-width="3" opacity="0.35"/>
+
+  <!-- Plasma labels clear of HTS circles -->
+  <text x="430" y="188" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#9a3412">peaked plasma</text>
+  <text x="430" y="272" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#9a3412">p-11B core</text>
+
+  <!-- HTS label above left, clear of other labels -->
+  <line x1="390" y1="216" x2="340" y2="70" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="340" y="58" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e3a5f">Levitated HTS ring</text>
+  <text x="340" y="72" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#475569">(REBCO + cryostat)</text>
+
+  <!-- NBI / RF heating -->
+  <rect x="350" y="300" width="70" height="22" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1"/>
+  <text x="385" y="315" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#92400e">NBI / RF heat</text>
+
+  <!-- H2O injector (label below to avoid field-line text) -->
+  <rect x="575" y="205" width="28" height="50" rx="3" fill="#0e7490" stroke="#155e75" stroke-width="1.5"/>
+  <line x1="589" y1="255" x2="589" y2="285" stroke="#0e7490" stroke-width="1"/>
+  <text x="589" y="298" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#155e75">H2O injector</text>
+  <text x="589" y="310" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#64748b">divertor throat</text>
+
+  <circle cx="612" cy="220" r="2.5" fill="#06b6d4"/>
+  <circle cx="620" cy="235" r="2" fill="#06b6d4"/>
+  <circle cx="616" cy="248" r="2.2" fill="#06b6d4"/>
+
+  <!-- Magnetic nozzle / DEC -->
+  <path d="M610,175 L720,130 L850,110 L850,350 L720,330 L610,285 Z" fill="#e2e8f0" stroke="#334155" stroke-width="2" opacity="0.55"/>
+  <ellipse cx="680" cy="230" rx="18" ry="55" fill="none" stroke="#1e3a5f" stroke-width="2.5" opacity="0.7"/>
+  <ellipse cx="740" cy="230" rx="22" ry="70" fill="none" stroke="#1e3a5f" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="800" cy="230" rx="26" ry="85" fill="none" stroke="#1e3a5f" stroke-width="1.5" opacity="0.35"/>
+
+  <path d="M820,200 L940,175 L940,285 L820,260 Z" fill="url(#exhaustGrad)"/>
+  <text x="880" y="228" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#92400e">exhaust</text>
+  <text x="880" y="242" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#a16207">alpha / H+ / Oz+</text>
+  <text x="880" y="255" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7" fill="#78716c">or DEC tap</text>
+
+  <text x="720" y="100" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#334155">Magnetic nozzle / DEC</text>
+  <line x1="720" y1="105" x2="720" y2="130" stroke="#64748b" stroke-width="1"/>
+
+  <line x1="860" y1="380" x2="940" y2="380" stroke="#1f2937" stroke-width="2" marker-end="url(#arrowHead)"/>
+  <text x="900" y="400" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1f2937">thrust</text>
+
+  <rect x="40" y="360" width="580" height="58" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="52" y="380" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#0f172a">Legend</text>
+  <rect x="52" y="390" width="14" height="10" fill="#57534e"/>
+  <text x="72" y="399" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#334155">thin W X-ray</text>
+  <circle cx="185" cy="395" r="6" fill="#1e3a5f"/>
+  <text x="197" y="399" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#334155">HTS ring</text>
+  <rect x="265" y="390" width="14" height="10" fill="#e07a3a" opacity="0.7"/>
+  <text x="285" y="399" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#334155">p-11B plasma</text>
+  <rect x="380" y="390" width="14" height="10" fill="#0e7490"/>
+  <text x="400" y="399" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#334155">H2O inject</text>
+  <line x1="480" y1="395" x2="494" y2="395" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="502" y="399" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#334155">optional ash barrier</text>
+</svg>

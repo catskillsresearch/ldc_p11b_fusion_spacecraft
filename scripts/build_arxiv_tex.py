@@ -1095,10 +1095,11 @@ def cleanup_pandoc_latex(latex: str) -> str:
 
 
 def insert_lists_of_floats(latex: str) -> str:
-    """Insert List of Figures after the abstract block (no tables in this manuscript)."""
+    """Insert List of Figures and List of Tables after the abstract block."""
     lists = (
         "\\clearpage\n"
         "\\listoffigures\n"
+        "\\listoftables\n"
         "\\clearpage\n\n"
     )
     # Prefer right after abstract

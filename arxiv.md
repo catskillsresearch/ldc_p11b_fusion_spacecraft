@@ -3,7 +3,7 @@
 ## Abstract
 The **Deuterium–Helium-3 ($D\text{-}^{3}\text{He}$) Levitated Dipole Rocket (LDR)** is a systems-level *conceptual* architecture for crewed interplanetary propulsion: a high-$\beta$ magnetospheric core, open-field magnetic nozzle, and ISRU water propellant dilution [1–4]. That baseline—including the mid-2026 finding that the LDR remains a **paper architecture** with **no commercial or dedicated government program**, while adjacent **OpenStar** LDC hardware targets **terrestrial deuterium–tritium (DT)** electricity—is surveyed in a companion manuscript at `catskillsresearch/ldc_fusion_github` (not yet deposited on arXiv or Zenodo) [5].
 
-This paper asks a narrower systems question: **can that same dipole rocket framework be adapted—largely directly—to the proton–boron-11 ($p\text{-}^{11}\text{B}$) fuel cycle**, yielding an **aneutronic** spacecraft power plant whose **crew radiation shield can be deleted or drastically thinned** relative to $D\text{-}^{3}\text{He}$? Among current $p\text{-}^{11}\text{B}$ concepts catalogued in the companion survey `references/p11b.md` [6], the most apt graft is the **open-field, ash-first** line epitomized by Princeton / Pale Blue **CHARM** (differential confinement, alpha channeling, prompt helium removal) [6–9], with supporting high-$\beta$ / beam-driven kinetics lessons from **TAE’s FRC** path [6,10]. Pulsed laser and pinch plants do not map cleanly onto a continuously levitated dipole rocket.
+This paper asks a narrower systems question: **can that same dipole rocket framework be adapted—largely directly—to the proton–boron-11 ($p\text{-}^{11}\text{B}$) fuel cycle**, yielding an **aneutronic** spacecraft power plant whose **crew radiation shield can be deleted or drastically thinned** relative to $D\text{-}^{3}\text{He}$? Among current $p\text{-}^{11}\text{B}$ concepts catalogued in the companion survey on Zenodo [6], the most apt graft is the **open-field, ash-first** line epitomized by Princeton / Pale Blue **CHARM** (differential confinement, alpha channeling, prompt helium removal) [6–9], with supporting high-$\beta$ / beam-driven kinetics lessons from **TAE’s FRC** path [6,10]. Pulsed laser and pinch plants do not map cleanly onto a continuously levitated dipole rocket.
 
 We conclude that the LDR’s **topology can be retained** (levitated ring, turbulent inward pinch, open outer field lines, water-diluted magnetic nozzle), while **fuel, kinetics, and ash handling must be retuned** for Rider / Bremsstrahlung limits and three-alpha ash. On shielding: the **thick neutron shadow shield of the $D\text{-}^{3}\text{He}$ LDR can be largely removed**; a **thinner high-$Z$ X-ray / Bremsstrahlung shadow** remains, and galactic cosmic-ray protection for the habitat is unchanged.
 
@@ -48,7 +48,9 @@ Items 1–4 transfer to $p\text{-}^{11}\text{B}$ with modest retuning. Item 5 is
 ---
 
 ## 3. Choosing Among $p\text{-}^{11}\text{B}$ Concepts: Why Open-Field / Ash-First Fits
-The companion catalog [6] sorts commercial and theory paths by time (continuous vs pulsed), confinement family, fuel end-state, and kinetics. For a **continuously levitated dipole rocket**, most leaves are a poor fit:
+The companion catalog [6] sorts commercial and theory paths by time (continuous vs pulsed), confinement family, fuel end-state, and kinetics. For a **continuously levitated dipole rocket**, most leaves are a poor fit (\autoref{tab:p11b-fit}):
+
+### Fit of proton-boron concepts to the LDR / LDC framework {#tab:p11b-fit}
 
 | Path (from [6]) | Fit to LDR / LDC | Why |
 | :--- | :--- | :--- |
@@ -127,6 +129,8 @@ In the $D\text{-}^{3}\text{He}$ LDR, secondary D–D / D–T neutrons force a **
 ### 5.2 X-ray / Bremsstrahlung shield — keep, possibly thin differently
 Hard X-rays remain an engineering radiation load even when neutrons are negligible [6]. A high-$Z$ **tungsten (or equivalent) shadow** facing the core is still warranted for habitat dose control—especially if $T_e$ or $Z_{\text{eff}}$ excursions raise Bremsstrahlung. Thickness should be set by X-ray transport, **not** by 14 MeV neutron attenuation; expect a **lighter** cone than the $D\text{-}^{3}\text{He}$ dual-layer shield, not a zero-shield utopia.
 
+![Schematic side view of the $p\text{-}^{11}\text{B}$ Levitated Dipole spacecraft plant. Crew-side (shadow cone): habitat, compact p/$^{11}\text{B}$ fuel tanks, and a separate $H_2O$ propellant tank. Shadow shield: thin tungsten X-ray absorber only (no thick neutron stack). Aft: levitated HTS ring and peaked $p\text{-}^{11}\text{B}$ plasma, optional ash barrier on open field lines, NBI/RF heating, $H_2O$ injector at the divertor throat, magnetic nozzle / DEC.](research/figures/ldr_p11b_layout.pdf)
+
 ```mermaid
 graph TD
     Core["p–¹¹B dipole core"] -->|Primary: charged alphas| Nozzle["Nozzle / DEC"]
@@ -150,7 +154,9 @@ With neutrons nearly gone, post-shutdown activation of the chamber and external 
 ---
 
 ## 6. Mass and Mission Implications (Qualitative)
-Relative to the $D\text{-}^{3}\text{He}$ LDR survey [5]:
+Relative to the $D\text{-}^{3}\text{He}$ LDR survey [5] (\autoref{tab:mass-mission}):
+
+### Subsystem mass and role comparison {#tab:mass-mission}
 
 | Subsystem | $D\text{-}^{3}\text{He}$ LDR | $p\text{-}^{11}\text{B}$ adaptation |
 | :--- | :--- | :--- |
@@ -181,6 +187,8 @@ Sections 5–7 argue subsystem-by-subsystem. This section states the trade expli
 
 ### 8.1 Feasibility
 
+### Feasibility compare-and-contrast {#tab:feasibility}
+
 | Dimension | Original $D\text{-}^{3}\text{He}$ LDR | $p\text{-}^{11}\text{B}$ adaptation | Edge |
 | :--- | :--- | :--- | :--- |
 | **Primary reaction cleanliness** | Charged products, but D–D / D–T side neutrons at **1–5%** of fusion power [2,5] | Primary channel fully charged; residual neutrons typically $\lesssim 0.2\%$ [6] | **$p\text{-}^{11}\text{B}$** |
@@ -193,7 +201,9 @@ Sections 5–7 argue subsystem-by-subsystem. This section states the trade expli
 **Feasibility bottom line.** The original design is the **more credible near-term physics path** (easier ignition metrics, decades of LDR-specific analysis). The $p\text{-}^{11}\text{B}$ adaptation is the **more credible long-term cleanliness path**, but it **raises** the plasma-control bar (Rider, ash) even while it **lowers** the neutronics and fuel-logistics bars. It is not a free upgrade; it is a deliberate bet that kinetics and ash modules can be closed on a bottle that already looks right.
 
 ### 8.2 Cost and mass economics
-Dollar costs for either concept are not bankable today; what *is* comparable is **where mass and recurring cost sit**.
+Dollar costs for either concept are not bankable today; what *is* comparable is **where mass and recurring cost sit** (\autoref{tab:cost-mass}):
+
+### Cost and mass-driver comparison {#tab:cost-mass}
 
 | Cost / mass driver | Original $D\text{-}^{3}\text{He}$ LDR | $p\text{-}^{11}\text{B}$ adaptation |
 | :--- | :--- | :--- |
@@ -239,7 +249,9 @@ graph LR
 ```
 
 ### 8.4 Who is actually building what (aligned with [5] §7)
-The baseline survey [5] §7 separates three scopes that must not be conflated: (i) the **$D\text{-}^{3}\text{He}$ LDR** paper architecture; (ii) **commercial LDC hardware for terrestrial electricity** (DT); (iii) **active academic/government LDR programs**. Mid-2026 status, matching [5] and public sources:
+The baseline survey [5] §7 separates three scopes that must not be conflated: (i) the **$D\text{-}^{3}\text{He}$ LDR** paper architecture; (ii) **commercial LDC hardware for terrestrial electricity** (DT); (iii) **active academic/government LDR programs**. Mid-2026 status, matching [5] and public sources (\autoref{tab:company-landscape}):
+
+### Commercial and program ownership of LDC / LDR theses {#tab:company-landscape}
 
 | Thesis | Owner / program? | Notes |
 | :--- | :--- | :--- |
@@ -258,25 +270,37 @@ We reuse the zeroth-order gates and **Plant Odds Score (POS★)** of the compani
 
 **Legend (same as [6]):** ● = articulated with supporting analysis or hardware elsewhere in the lineage (score 2); ◐ = partial / roadmap / ported (1); ○ = weak or absent (0).
 
-**Scorecard (editorial, mid-2026)**
+\autoref{tab:ldc-scorecard} is the editorial mid-2026 scorecard with paths as columns (only two paths) and each gate labeled by letter and name.
 
-| Path | Type | C | F | K | R | A | L | M | T | S | H | Notes |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **$D\text{-}^{3}\text{He}$ LDR** [1–5] | Imputed rocket plant | LDC | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ○ | ◐ | ○ | Paper architecture ([5] §7); $^3\mathrm{He}$ logistics softens **F**; OpenStar LDC **H** is terrestrial DT, not credited here |
-| **$p\text{-}^{11}\text{B}$ LDC adaptation** (this work) | Imputed rocket/plant | LDC | ● | ◐ | ◐ | ◐ | ○ | ◐ | ○ | ◐ | ○ | Abundant fuel (**F**); Rider/ash need CHARM/TAE grafts (**K**/**A**); no closed **L**; no owner (**T**/**H**) |
+### Diligence scorecard for LDR paths (gates as rows) {#tab:ldc-scorecard}
 
-Gate letters: **C** confinement; **F** fuel/nuclear (+ logistics); **K** kinetics/Rider; **R** radiation; **A** ash; **L** Lawson/engineering $Q$; **M** materials, capture, crew shield; **T** technology-to-market; **S** in-silico; **H** hardware iteration [6].
+| Gate | $D\text{-}^{3}\text{He}$ LDR [1–5] | $p\text{-}^{11}\text{B}$ LDC adaptation (this work) |
+| :--- | :---: | :---: |
+| **Type** | Imputed rocket plant | Imputed rocket / plant |
+| **C — Confinement class** | LDC | LDC |
+| **F — Fuel & nuclear (+ logistics)** | ◐ | ● |
+| **K — Kinetics / Rider** | ● | ◐ |
+| **R — Radiation** | ◐ | ◐ |
+| **A — Ash & impurities** | ◐ | ◐ |
+| **L — Lawson / engineering $Q$** | ◐ | ○ |
+| **M — Materials, capture, crew shield** | ◐ | ◐ |
+| **T — Technology-to-market** | ○ | ○ |
+| **S — In-silico / digital twin** | ◐ | ◐ |
+| **H — Hardware iteration** | ○ | ○ |
+| **Notes** | Paper architecture ([5] §7); $^3\mathrm{He}$ logistics softens **F**; OpenStar LDC **H** is terrestrial DT, not credited here | Abundant fuel (**F**); Rider/ash need CHARM/TAE grafts (**K**/**A**); no closed **L**; no owner (**T**/**H**) |
 
 **POS formula** (unchanged from [6] §12.1), with ●$=2$, ◐$=1$, ○$=0$:
 
 $$\mathrm{POS} = \frac{2(K+R+A+L) + 1.5(T+H) + (F+M+S)}{28}\times 100, \qquad \mathrm{POS}^\star = \kappa\times\mathrm{POS}.$$
+
+### Plant Odds Score (POS★) for the two LDR paths {#tab:pos-results}
 
 | Path | $K,R,A,L$ | $T,H$ | $F,M,S$ | POS | $\kappa$ | POS★ |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **$D\text{-}^{3}\text{He}$ LDR** | $2+1+1+1=5$ | $0+0=0$ | $1+1+1=3$ | $2\cdot5 + 1.5\cdot0 + 3 = 13$ → **46** | 0.50 | **23** |
 | **$p\text{-}^{11}\text{B}$ LDC adaptation** | $1+1+1+0=3$ | $0+0=0$ | $2+1+1=4$ | $2\cdot3 + 0 + 4 = 10$ → **36** | 0.50 | **18** |
 
-**How to read the scores.** Gaps below about 10 POS★ points are noise in [6]; the **23 vs 18** spread is therefore a mild preference for the original LDR on the weighted physics+execution composite—driven by stronger **K**/**L** on published $D\text{-}^{3}\text{He}$ dipole-rocket sizing, not by commercial ownership (both **T**/**H** are empty). The $p\text{-}^{11}\text{B}$ row wins raw **F** and the shielding story inside **M**, but loses on **L** and pays the Rider/ash tax in **K**/**A**. Neither row approaches company-owned $p\text{-}^{11}\text{B}$ leaders in [6] (e.g. TAE POS★ $\sim 79$) because those programs have real **T**/**H**; these LDC fuel theses do not.
+**How to read the scores.** Gaps below about 10 POS★ points are noise in [6]; the **23 vs 18** spread in \autoref{tab:pos-results} is therefore a mild preference for the original LDR on the weighted physics+execution composite—driven by stronger **K**/**L** on published $D\text{-}^{3}\text{He}$ dipole-rocket sizing, not by commercial ownership (both **T**/**H** are empty). The $p\text{-}^{11}\text{B}$ column in \autoref{tab:ldc-scorecard} wins raw **F** and the shielding story inside **M**, but loses on **L** and pays the Rider/ash tax in **K**/**A**. Neither path approaches company-owned $p\text{-}^{11}\text{B}$ leaders in [6] (e.g. TAE POS★ $\sim 79$) because those programs have real **T**/**H**; these LDC fuel theses do not.
 
 **If OpenStar (or a new program) later adopted either advanced fuel on a dipole rocket**, the correct move would be to raise that row’s **H** (and eventually **T**) and possibly $\kappa\rightarrow 1.0$—not to invent a second LDC company. As of mid-2026 that adoption has not happened for $D\text{-}^{3}\text{He}$ rocket or $p\text{-}^{11}\text{B}$ [5].
 
@@ -295,7 +319,7 @@ As §8 lays out: $D\text{-}^{3}\text{He}$ wins on **near-term plasma feasibility
 ---
 
 ## Acknowledgments
-The $D\text{-}^{3}\text{He}$ LDR framing—including the development-gap clarification in its §7—follows the systems survey maintained at [5]. Contemporary $p\text{-}^{11}\text{B}$ project and physics context is drawn from the companion survey [6] in this repository. Diligence gates and POS★ follow [6] §1.7 / §12 with spacecraft adaptations noted in §8.5.
+The $D\text{-}^{3}\text{He}$ LDR framing—including the development-gap clarification in its §7—follows the systems survey maintained at [5]. Contemporary $p\text{-}^{11}\text{B}$ project and physics context is drawn from the companion survey [6]. Diligence gates and POS★ follow [6] §1.7 / §12 with spacecraft adaptations noted in §8.5.
 
 ## References
 
@@ -304,7 +328,7 @@ The $D\text{-}^{3}\text{He}$ LDR framing—including the development-gap clarifi
 3. **Kesner, J., Mauel, M. E., et al.** (2004). Helium-3 fusion in a levitated dipole. *Levitated Dipole Experiment Project Technical Report*, MIT Plasma Science and Fusion Center & Columbia University.
 4. **Miley, G. H., Momota, H., & Santarius, J. F.** (1994). Sizing and propulsion characteristics of an advanced-fuel levitated dipole spacecraft engine. *AIAA Joint Propulsion Conference Proceedings*, AIAA-94-2921.
 5. **Ericson, L. W.** (2026). *Space Propulsion via a D–³He Levitated Dipole Rocket: A High-Isp, Moderate-Thrust Architecture utilizing ISRU Water Propellant* (working manuscript). Source repository: [https://github.com/catskillsresearch/ldc_fusion_github](https://github.com/catskillsresearch/ldc_fusion_github) (not yet on arXiv or Zenodo). Local archive: `.tmp/arxiv_d3he_ldr.md`. See especially §7 (no commercial LDR; OpenStar = terrestrial DT LDC only; no active academic/gov LDR program).
-6. **Ericson, L. W.** (2026). *State of the art on proton-boron fusion for electricity generation* (working survey). This repository: `references/p11b.md`. Diligence gates §1.7; scorecard §8; Plant Odds Score POS★ §12.1.
+6. **Ericson, L. W.** (2026). State of the art on proton-boron fusion for electricity generation (Version 1.0) [Preprint]. Zenodo. [https://doi.org/10.5281/zenodo.21403462](https://doi.org/10.5281/zenodo.21403462) ([record](https://zenodo.org/records/21403462)). Diligence gates §1.7; scorecard §8; Plant Odds Score POS★ §12.1.
 7. **Ochs, I. E., Kolmes, E. J., & Fisch, N. J.** (2025). Preventing ash from poisoning proton-boron 11 fusion plasmas. *Physics of Plasmas*, 32(2), 052506. [https://doi.org/10.1063/5.0250611](https://doi.org/10.1063/5.0250611)
 8. **Fisch, N.** (2025). Economical proton-boron 11 fusion (ARPA-E OPEN 2021). Presentation at the *2025 ARPA-E Fusion Programs Annual Meeting*, 9 July 2025.
 9. **Pale Blue Fusion / Princeton CHARM program.** Chambered aneutronic rotating-mirror concept and related U.S. applications disclosed in [8]; see also discussion in [6], §6.6–6.7.
