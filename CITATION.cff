@@ -1,0 +1,38 @@
+# Citation File Format — GitHub “Cite this repository” only.
+# Authoritative Zenodo metadata (subjects, resource type, relations): .zenodo.json
+
+cff-version: 1.2.0
+title: "Adapting the D-3He Levitated Dipole Rocket to p-11B for an Aneutronic Power Plant with Reduced Astronaut Shielding"
+message: "If you use this survey, please cite it as below."
+type: report
+authors:
+  - family-names: Ericson
+    given-names: Lars Warren
+    affiliation: Catskills Research Company
+    orcid: "https://orcid.org/0000-0001-8299-9361"
+abstract: >-
+  Systems-level survey of adapting the Deuterium–Helium-3 (D–³He) Levitated Dipole
+  Rocket (LDR) architecture to the proton–boron-11 (p–¹¹B) fuel cycle, aiming at an
+  aneutronic fusion power plant for crewed spacecraft that requires substantially
+  less radiation shielding than neutron-producing alternatives.
+keywords:
+  - levitated dipole
+  - p-11B fusion
+  - aneutronic fusion
+  - fusion propulsion
+  - astronaut shielding
+  - D-3He
+repository-code: "https://github.com/catskillsresearch/ldc_p11b_fusion_spacecraft"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-07-21
+# Full keywords, LOC subjects, and Zenodo fields: .zenodo.json
+preferred-citation:
+  type: report
+  title: "Adapting the D-3He Levitated Dipole Rocket to p-11B for an Aneutronic Power Plant with Reduced Astronaut Shielding"
+  authors:
+    - family-names: Ericson
+      given-names: Lars Warren
+  year: 2026
+  version: 0.1.0
+  notes: "Deposit zenodo.pdf on Zenodo for a DOI; source lives on GitHub."
